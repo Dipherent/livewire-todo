@@ -16,10 +16,14 @@
                         <p class="mt-2 text-sm text-red-600" id="email-error">{{$errors->first('title')}}</p>
                     @endif
                  
-
+                   
                 
                     
             </div>
+            <div>
+                <p class="mt-3 text-sm text-gray-400">(press 'Enter' to add to list)</p>
+            </div>
+
             {{-- <button wire:click="addTodo"  type="submit" class="my-6 inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-gray-700 bg-gray-100 hover:bg-gray-50 focus:outline-none focus:borde-blue-300 focus:shadow-outlin-gray active:b-gray-200 transition ease-in-out duration-150">
                 Add to list
             </button> --}}
