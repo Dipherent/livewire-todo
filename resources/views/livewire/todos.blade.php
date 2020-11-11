@@ -4,7 +4,7 @@
             <div >
                 
                 <div class="mt-1 relative rounded-md shadow-sm">
-                <input  type="text" name="addTodo" class="form-input block w-full pr-10 border-gray-300 text-gray-900 placeholder-gray-300 focus:border-blue-300 focus:shadow-outline-blue sm:text-sm sm:leading-5" placeholder="What's in your list?" 
+                <input wire:keydown.enter="addTodo"  type="text" name="addTodo" class="form-input block w-full pr-10 border-gray-300 text-gray-900 placeholder-gray-300 focus:border-blue-300 focus:shadow-outline-blue sm:text-sm sm:leading-5" placeholder="What's in your list?" 
                    wire:model="title" >
                     @if ($errors->has('title'))
                         <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
@@ -20,9 +20,9 @@
                 
                     
             </div>
-            <button wire:click="addTodo"  type="submit" class="my-6 inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-gray-700 bg-gray-100 hover:bg-gray-50 focus:outline-none focus:borde-blue-300 focus:shadow-outlin-gray active:b-gray-200 transition ease-in-out duration-150">
+            {{-- <button wire:click="addTodo"  type="submit" class="my-6 inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-gray-700 bg-gray-100 hover:bg-gray-50 focus:outline-none focus:borde-blue-300 focus:shadow-outlin-gray active:b-gray-200 transition ease-in-out duration-150">
                 Add to list
-            </button>
+            </button> --}}
 
             <div class="bg-gray-100 h-1 my-4 shadow-lg" ></div>
             @foreach ($todos as $todo)
