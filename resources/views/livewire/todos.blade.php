@@ -30,7 +30,7 @@
 
             <div class="bg-gray-100 h-1 my-4 shadow-lg" ></div>
             @foreach ($todos as $todo)
-                <div class="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
+                <div class="bg-white px-4 py-5 border-b-4 border-gray-100 sm:px-6">
                 <div class="-ml-4 -mt-4 flex justify-between items-center flex-wrap sm:flex-no-wrap">
 
                   <div class=" flex items-center justify-between ml-1 mt-4">

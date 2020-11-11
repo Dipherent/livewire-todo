@@ -22,6 +22,10 @@
             </div>
         </section>
     </div>
+    <p class="my-8 mx-8 text-left text-base leading-6 text-gray-400">
+        &copy; 2020 A work by Ameen Sanad. All rights reserved.
+      </p>
 </main>
+
 @endsection
 
